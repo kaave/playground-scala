@@ -12,5 +12,6 @@ lazy val root = (project in file(".")).settings(
         "-Ywarn-unused:imports"
     ),
     Compile / console / scalacOptions -= "-Ywarn-unused:imports",
-    libraryDependencies +=  "org.scalaj" %% "scalaj-http" % "2.3.0"
+    libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.3.0",
+    wartremoverErrors ++= Warts.unsafe
   )
