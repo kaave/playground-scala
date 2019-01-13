@@ -13,5 +13,12 @@ lazy val root = (project in file(".")).settings(
     ),
     Compile / console / scalacOptions -= "-Ywarn-unused:imports",
     libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.3.0",
-    wartremoverErrors ++= Warts.unsafe
+
+    // test library
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+    // mock
+    libraryDependencies += "org.mockito" % "mockito-core" % "2.23.4" % Test,
+
+    // lint not tests and sbt console
+    wartremoverErrors in (Compile, compile) ++= Warts.unsafe
   )
