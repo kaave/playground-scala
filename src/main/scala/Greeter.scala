@@ -1,10 +1,8 @@
 import com.github.nscala_time.time.Imports._
 
-class Greeter(dt: DateTime) {
-  private val datetime = dt
-
+class Greeter(val datetime: DateTime, val timeRange: TimeRange) {
   def greet(): String = {
-    if (MorningTimeRange.contains(datetime)) {
+    if (timeRange.contains(datetime)) {
       "おはようございます"
     } else {
       ""
