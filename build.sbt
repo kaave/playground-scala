@@ -17,7 +17,8 @@ lazy val root = (project in file(".")).settings(
     // test library
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test,
     // mock
-    libraryDependencies += "org.mockito" % "mockito-core" % "2.23.4" % Test,
+//    libraryDependencies += "org.mockito" % "mockito-core" % "2.23.4" % Test,
+    libraryDependencies += "org.mockito" % "mockito-core" % "2.23.4",
 
     // datetime library
     libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.20.0",
