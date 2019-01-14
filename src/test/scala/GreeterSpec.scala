@@ -1,6 +1,4 @@
 import org.scalatest._
-import org.scalatest.EitherValues._
-import org.scalatest.concurrent.Timeouts
 import org.scalatest.mockito.MockitoSugar
 import org.mockito.Mockito._
 import com.github.nscala_time.time.Imports._
