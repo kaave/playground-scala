@@ -1,3 +1,4 @@
+import time_range.TimeRange
 import org.scalatest._
 import org.scalatest.mockito.MockitoSugar
 import org.mockito.Mockito._

@@ -1,3 +1,5 @@
+package time_range
+
 import com.github.nscala_time.time.Imports._
 import org.scalatest._
 

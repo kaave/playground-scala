@@ -1,5 +1,7 @@
-import org.scalatest._
+package time_range
+
 import com.github.nscala_time.time.Imports._
+import org.scalatest._
 
 class CloseTimeRangeSpec extends FunSpec with DiagrammedAssertions {
   describe("contains") {
