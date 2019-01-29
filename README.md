@@ -3,6 +3,8 @@
 ## How to Use
 
 ```bash
+# first: setup ensime for lsp
+sbt ensimeConfig
 # run Main
 sbt run
 # compile

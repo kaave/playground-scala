@@ -3,6 +3,7 @@ lazy val root = (project in file(".")).settings(
     organization := "io.github.kaave",
     version := "0.0.1-SNAPSHOT",
     scalaVersion := "2.12.8",
+    ensimeScalaVersion in ThisBuild := "2.12.8",
     scalacOptions ++= Seq(
         // show detail warning when use deprecated API
         "-deprecation",
