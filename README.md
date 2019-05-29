@@ -1,5 +1,9 @@
 # Playground scala
 
+## Guide repository
+
+https://github.com/fpinscala/fpinscala
+
 ## How to Use
 
 ```bash

@@ -65,6 +65,23 @@ object MyModule {
     loop(1)
   }
 
+  /*
+   * 2.6
+   */
+  def partial1[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => f(a, b)
+
+  /*
+   * practice
+   */
+  def curry[A, B, C](f: (A, B) => C): A => B => C =
+    (a: A) => (b: B) => f(a, b)
+  def uncurry[A, B, C](f: A => B => C): (A, B) => C =
+    (a: A, b: B) => f(a)(b)
+  def compose[A, B, C](f: B => C, g: A => B): A => C = (a: A) => f(g(a))
+  // same
+//  def compose[A, B, C](f: B => C, g: A => B): A => C = f compose g
+//  def compose[A, B, C](f: B => C, g: A => B): A => C = f andThen g
+
 //  def main(args: Array[String]): Unit = println(factorial(2))
 //  def main(args: Array[String]): Unit = println(fib(10))
   def main(args: Array[String]): Unit = {
