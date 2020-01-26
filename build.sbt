@@ -16,5 +16,5 @@ Compile / console / scalacOptions -= "-Ywarn-unused:imports"
 // libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
 // // mock
 // libraryDependencies += "org.mockito" % "mockito-core" % "2.28.2" % Test
-// // lint not tests and sbt console
-// wartremoverErrors in (Compile, compile) ++= Warts.unsafe
+// lint not tests and sbt console
+wartremoverErrors in (Compile, compile) ++= Warts.unsafe
