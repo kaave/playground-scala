@@ -12,8 +12,8 @@ scalacOptions ++= Seq(
 )
 Compile / console / scalacOptions -= "-Ywarn-unused:imports"
 // libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.4.2"
-// // test library
-// libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
+// test library
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
 // // mock
 // libraryDependencies += "org.mockito" % "mockito-core" % "2.28.2" % Test
 // lint not tests and sbt console
